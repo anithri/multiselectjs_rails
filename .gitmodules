@@ -1,0 +1,3 @@
+[submodule "src/multiselect.js"]
+	path = src/multiselect.js
+	url = git://github.com/crdeutsch/multiselect.git
