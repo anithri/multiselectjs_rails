@@ -7,18 +7,16 @@ Gem::Specification.new do |s|
   s.version     = MultiselectjsRails::VERSION
   s.authors     = ["Scott M Parrish"]
   s.email       = ["anithri@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/anithri/multiselectjs_rails"
+  s.summary     = %q{A Rails Engine for vendor/assets of multiselect javascript library"}
+  s.description = %q{A Rails 3.1 Engine to include javascritp and css files from https://github.com/crdeutsch/multiselect }
 
   s.rubyforge_project = "multiselectjs_rails"
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.files         = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE.txt", "README.md"]
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
   s.add_development_dependency "rake"
-  s.add_runtime_dependency "rails", "~> 3.0"
+  s.add_runtime_dependency "railties", "~> 3.1"
 end
